@@ -7,7 +7,9 @@
 You are being redirected.
 <script>
 workaround_hash=location.href.split('#').splice(1).join('#');
-window.location.replace(workaround_hash);
+if(workaround_hash !='') {
+ window.location.replace(workaround_hash);
+}
 </script>
 </body>
 </html>
