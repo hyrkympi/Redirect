@@ -1,0 +1,13 @@
+<html>
+<head>
+<meta name="referrer" content="no-referrer" />
+<title>Redirection Service</title>
+</head>
+<body>
+You are being redirected.
+<script>
+workaround_hash=location.href.split('#').splice(1).join('#');
+window.location.replace(workaround_hash);
+</script>
+</body>
+</html>
