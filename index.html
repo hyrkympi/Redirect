@@ -21,7 +21,7 @@ You are being redirected.
  
 workaround_hash=location.href.split("?goto=")[1];
 if(workaround_hash != undefined) {
- window.location.replace(decodeBase64(decodeURIComponent(workaround_hash)));
+ window.location.replace(atob(decodeURIComponent(workaround_hash)));
 }
 </script>
 </body>
