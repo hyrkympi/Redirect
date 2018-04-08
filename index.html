@@ -6,9 +6,9 @@
 <body>
 You are being redirected.
 <script>
-workaround_hash=location.href.split('?').splice(1).join('?');
+workaround_hash=location.href.split("?goto=")[1];
 if(workaround_hash !='') {
- window.location.replace(workaround_hash);
+ window.location.replace(decodeURIComponent(workaround_hash));
 }
 </script>
 </body>
