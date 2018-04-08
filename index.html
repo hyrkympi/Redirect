@@ -6,6 +6,8 @@
 <body>
 You are being redirected.
 <script>
+
+
  decodeBase64 = function(s) {
     var e={},i,b=0,c,x,l=0,a,r='',w=String.fromCharCode,L=s.length;
     var A="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
@@ -19,7 +21,7 @@ You are being redirected.
  
 workaround_hash=location.href.split("?goto=")[1];
 if(workaround_hash != undefined) {
- window.location.replace(decodeBase64(workaround_hash));
+ window.location.replace(decodeBase64(decodeURIComponent(workaround_hash)));
 }
 </script>
 </body>
